@@ -1,0 +1,18 @@
+body {
+    background-color: whitesmoke;
+}
+
+.nav-header {
+    background-color: rgb(5, 37, 128);
+    color: white;
+}
+
+.verb-box {
+    background-color: rgb(117, 177, 255);
+    color: whitesmoke;
+    margin: 1rem;
+    text-align: center;
+    padding: .5rem;
+    box-shadow: 2px 4px #0000009f;
+    border-radius: 4px
+}
