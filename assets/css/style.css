@@ -48,3 +48,14 @@ input {
     margin-top: 0px;
     box-shadow: 2px 4px rgb(90 90 92 / 54%);
 }
+
+#tick-one {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+#close-one {
+   background-color: orange;
+   border-radius: 4px;
+   font-style: italic;
+}
