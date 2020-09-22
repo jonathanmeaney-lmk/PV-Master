@@ -23,6 +23,11 @@ body {
     width: 100%;
 }
 
+.verb-box:hover {
+    background-color: whitesmoke;
+    color:  rgb(96, 115, 165);
+}
+
 .excercise-container {
     background-color: rgb(96 144 205 / 36%);
     min-height: 300px;
