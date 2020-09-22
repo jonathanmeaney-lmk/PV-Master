@@ -2,8 +2,12 @@ $(document).ready(function() {
 
 // Toggle to show/hide verb example boxes 
 
-    $("#verb-one").click(function() {
-        $("#example-one").toggle()
+    $("#verb-one").mouseenter(function() {
+        $("#example-one").slideToggle()
+    })
+
+    $("#verb-one").mouseleave(function() {
+        $("#example-one").slideToggle()
     })
 
      $("#verb-two").click(function() {
