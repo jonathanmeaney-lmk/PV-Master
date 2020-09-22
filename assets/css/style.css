@@ -6,6 +6,12 @@ body {
     
 }
 
+.headings {
+    border: 5px solid rgb(51, 50, 120);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .nav-header {
     background-color: rgb(51, 50, 120);
     color: whitesmoke;

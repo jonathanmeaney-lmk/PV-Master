@@ -2,35 +2,10 @@ $(document).ready(function() {
 
 // Toggle to show/hide verb example boxes 
 
-    $("#verb-one").mouseenter(function() {
-        $("#example-one").slideToggle()
+    $(".verb-box").click(function() {
+        $(this).next().slideToggle("slow")
     })
-
-    $("#verb-one").mouseleave(function() {
-        $("#example-one").slideToggle()
-    })
-
-     $("#verb-two").click(function() {
-        $("#example-two").toggle()
-    })
-    
-     $("#verb-three").click(function() {
-        $("#example-three").toggle()
-    })
-
-     $("#verb-four").click(function() {
-        $("#example-four").toggle()
-    })
-
-     $("#verb-five").click(function() {
-        $("#example-five").toggle()
-    })
-    
-     $("#verb-six").click(function() {
-        $("#example-six").toggle()
-    })
-
-    
+ 
 }); 
 
 
