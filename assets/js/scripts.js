@@ -3,7 +3,7 @@ function answerSubmit() {
     let tickUpOne = document.getElementById("tick-up-one")
     let closeUpOne = document.getElementById("close-up-one")
 
-    // Answer Up One
+    // Up Answer One Grows Up
 
     if (answerUpOne === "grows up") {
         tickUpOne.src = "../assets/images/green-tick.png";
@@ -14,4 +14,8 @@ function answerSubmit() {
     else {
         tickUpOne.src = "../assets/images/incorrect-x.png"
     }
+
+      // Up Answer One Grows Up
+
+      
 }
