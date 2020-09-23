@@ -60,7 +60,7 @@ input {
     box-shadow: 2px 4px rgb(90 90 92 / 54%);
 }
 
-#tick-one {
+.up-one {
     max-height: 25px;
     max-width: 25px;
 }

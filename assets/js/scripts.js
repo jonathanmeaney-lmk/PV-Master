@@ -1,15 +1,17 @@
-function myfunction() {
-    let answerone = document.getElementById("input-one").value
-    let tickone = document.getElementById("tick-one")
-    let closeone = document.getElementById("close-one")
+function answerSubmit() {
+    let answerUpOne = document.getElementById("up-one").value
+    let tickUpOne = document.getElementById("tick-up-one")
+    let closeUpOne = document.getElementById("close-up-one")
 
-    if (answerone === "gives up") {
-        tickone.src = "../assets/images/green-tick.png";
-        closeone.style.display= "none"
-    } else if (answerone === "give up") {
-        closeone.innerHTML ="  Uh close! Hint: the subject is third person"
+    // Answer Up One
+
+    if (answerUpOne === "grows up") {
+        tickUpOne.src = "../assets/images/green-tick.png";
+        closeUpOne.style.display= "none"
+    } else if (answerUpOne === "grow up") {
+        closeUpOne.innerHTML ="  Close! Hint: the subject is third person"
     }
     else {
-        tickone.src = "../assets/images/incorrect-x.png"
+        tickUpOne.src = "../assets/images/incorrect-x.png"
     }
 }
