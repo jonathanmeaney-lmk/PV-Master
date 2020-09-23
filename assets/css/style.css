@@ -44,7 +44,7 @@ body {
 }
 
 input {
-    max-width: 5rem;
+    max-width: 6rem;
     max-height: 25px;
     background-color: whitesmoke;
     border-style: unset;
@@ -60,7 +60,7 @@ input {
     box-shadow: 2px 4px rgb(90 90 92 / 54%);
 }
 
-.up-one {
+.result {
     max-height: 25px;
     max-width: 25px;
 }
@@ -71,4 +71,6 @@ input {
    font-style: italic;
 }
 
-
+#upAdvance {
+    display: none;
+}
