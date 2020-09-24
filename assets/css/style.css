@@ -43,7 +43,7 @@ body {
     padding: 1rem;
 }
 
-input {
+.input-up {
     max-width: 6rem;
     max-height: 25px;
     background-color: whitesmoke;
@@ -75,6 +75,10 @@ input {
     display: none;
 }
 
-#down-Q1 {
-    min-width: 100px;
+.input-down {
+    min-width: 300px;
+    max-height: 25px;
+    background-color: whitesmoke;
+    border-style: unset;
+    border-radius: 6px;
 }
