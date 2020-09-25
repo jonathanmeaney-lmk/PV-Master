@@ -1,4 +1,6 @@
-function answerSubmit() {
+// ********* VERBS WITH UP **************
+
+function answerSubmitUp() {
 
     let upCount = 0
 
@@ -89,6 +91,8 @@ function answerSubmit() {
         tickUpSix.src = "../assets/images/incorrect-x.png"
     }
 
+    // Counting up Score Verbs with Up
+    
     let marksUp = document.getElementById("marksUp")
     
     if (upCount === 6) {
@@ -104,4 +108,99 @@ function answerSubmit() {
         marksUp.innerHTML = "Poor effort! You scored "+ upCount + " out of 6. Keep trying"
     }
     else {console.log(upCount)}
+}
+
+
+// ********* VERBS WITH DOWN **************
+
+function answerSubmitDown() {
+
+    downScore = 0
+
+    // Down Answer One 
+
+    let answerDownOne = document.getElementById("down-one").value
+    let tickDownOne = document.getElementById("tick-down-one")
+
+    if (answerDownOne === "Who will write down the main points of the meeting?") {
+        tickDownOne.src = "../assets/images/green-tick.png";
+        downScore++
+        console.log(downScore)
+    } else {
+        tickDownOne.src = "../assets/images/incorrect-x.png"
+    }
+
+    // Down Answer Two 
+
+    let answerDownTwo = document.getElementById("down-two").value
+    let tickDownTwo = document.getElementById("tick-down-two")
+
+    if (answerDownTwo === "When did the school close down?") {
+        tickDownTwo.src = "../assets/images/green-tick.png";
+        downScore++
+        console.log(downScore)
+    } else {
+        tickDownTwo.src = "../assets/images/incorrect-x.png"
+    }
+
+    // Down Answer Three 
+
+    let answerDownThree = document.getElementById("down-three").value
+    let tickDownThree = document.getElementById("tick-down-three")
+
+    if (answerDownThree === "Why did Lisa turn down their job offer?" ||
+        answerDownThree === "Why did Lisa turn down the job offer?") 
+        {
+        tickDownThree.src = "../assets/images/green-tick.png";
+        downScore++
+        console.log(downScore)
+    } else {
+        tickDownThree.src = "../assets/images/incorrect-x.png"
+    }
+   
+    // Down Answer Four
+
+    let answerDownFour = document.getElementById("down-four").value
+    let tickDownFour = document.getElementById("tick-down-four")
+
+    if (answerDownFour === "How many times has your car broken down this year?" ||
+        answerDownFour === "How often has your car broken down this year?" ||
+        answerDownFour === "How many time has my car broken down this year?" ||
+        answerDownFour === "How often has my car broken down this year?")
+        {
+        tickDownFour.src = "../assets/images/green-tick.png";
+        downScore++
+        console.log(downScore++)
+    } else {
+        tickDownFour.src = "../assets/images/incorrect-x.png"
+    }
+
+    // Down Answer Five
+
+    let answerDownFive = document.getElementById("down-five").value
+    let tickDownFive = document.getElementById("tick-down-five")
+
+    if (answerDownFive === "How much did oil prices go down last week?" ||
+        answerDownFive === "What percentage did oil prices go down last week?") {
+        tickDownFive.src = "../assets/images/green-tick.png";
+        downScore++
+        console.log(downScore)
+    } else {
+        tickDownFive.src = "../assets/images/incorrect-x.png"
+    }
+
+    // Down Answer Six
+
+    let answerDownSix = document.getElementById("down-six").value
+    let tickDownSix = document.getElementById("tick-down-six")
+
+    if (answerDownSix === "What has Paul cut down on?" ||
+        answerDownSix === "What has Paul cut down on?") 
+        {
+        tickDownSix.src = "../assets/images/green-tick.png";
+        downScore++
+        console.log(downScore)
+    } else {
+        tickDownSix.src = "../assets/images/incorrect-x.png"
+    }
 }
