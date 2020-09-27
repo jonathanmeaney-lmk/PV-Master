@@ -2,7 +2,7 @@
 
 function answerSubmitUp() {
 
-    let upCount = 0
+    let upScore = 0
 
     let answerUpOne = document.getElementById("up-one").value
     let tickUpOne = document.getElementById("tick-up-one")
@@ -13,7 +13,8 @@ function answerSubmitUp() {
     if (answerUpOne === "grows up") {
         tickUpOne.src = "../assets/images/green-tick.png";
         closeUpOne.style.display= "none"
-        upCount ++;
+        upScore ++;
+        console.log(upScore)
     } else if (answerUpOne === "grow up") {
         closeUpOne.innerHTML ="  Close! Hint: the subject is third person"
     }
@@ -30,7 +31,8 @@ function answerSubmitUp() {
     if (answerUpTwo === "showed up") {
         tickUpTwo.src = "../assets/images/green-tick.png";
         closeUpTwo.style.display= "none"
-        upCount ++;
+        upScore ++;
+        console.log(upScore)
     } else if (answerUpTwo === "show up" || answerUpTwo == "shows up") {
         closeUpTwo.innerHTML ="  Close! Hint: The time is past"
     }
@@ -45,7 +47,8 @@ function answerSubmitUp() {
 
     if (answerUpThree === "give up") {
         tickUpThree.src = "../assets/images/green-tick.png";
-        upCount ++;
+        upScore ++;
+        console.log(upScore)
     } else {
         tickUpThree.src = "../assets/images/incorrect-x.png"
     }
@@ -57,7 +60,8 @@ function answerSubmitUp() {
 
     if (answerUpFour === "look up") {
         tickUpFour.src = "../assets/images/green-tick.png";
-        upCount ++;
+        upScore ++;
+        console.log(upScore)
     } else {
         tickUpFour.src = "../assets/images/incorrect-x.png"
     }
@@ -71,7 +75,8 @@ function answerSubmitUp() {
     if (answerUpFive === "Taking up" || answerUpFive === "taking up") {
         tickUpFive.src = "../assets/images/green-tick.png";
         closeUpFive.style.display= "none"
-        upCount ++;
+        upScore ++;
+        console.log(upScore)
     } else if (answerUpFive === "Take up" || answerUpFive == "To take up" || answerUpFive === "take up" || answerUpFive === " to take up") {
         closeUpFive.innerHTML ="  Close! Hint: Verb is gerund(ing) form"
     }
@@ -86,7 +91,8 @@ function answerSubmitUp() {
    
     if (answerUpSix === "set up") {
         tickUpSix.src = "../assets/images/green-tick.png";
-        upCount ++;
+        upScore ++;
+        console.log(upScore)
     } else {
         tickUpSix.src = "../assets/images/incorrect-x.png"
     }
@@ -95,19 +101,19 @@ function answerSubmitUp() {
     
     let marksUp = document.getElementById("marksUp")
     
-    if (upCount === 6) {
-        marksUp.innerHTML = "Well done! You scored "+ upCount + " out of 6. On to the next excercise!"
+    if (upScore === 6) {
+        marksUp.innerHTML = "Well done! You scored "+ upScore + " out of 6. On to the next excercise!"
     }
-    else if (upCount === 5 || upCount === 4) {
-        marksUp.innerHTML = "Almost there! You scored "+ upCount + " out of 6. Try again"
+    else if (upScore === 5 || upScore === 4) {
+        marksUp.innerHTML = "Almost there! You scored "+ upScore + " out of 6. Try again"
     }
-    else if (upCount === 3 || upCount === 2) {
-        marksUp.innerHTML = "Not great! You scored "+ upCount + " out of 6. Keep trying"
+    else if (upScore === 3 || upScore === 2) {
+        marksUp.innerHTML = "Not great! You scored "+ upScore + " out of 6. Keep trying"
     }
-    else if (upCount === 1 || upCount === 0) {
-        marksUp.innerHTML = "Poor effort! You scored "+ upCount + " out of 6. Keep trying"
+    else if (upScore === 1 || upScore === 0) {
+        marksUp.innerHTML = "Poor effort! You scored "+ upScore + " out of 6. Keep trying"
     }
-    else {console.log(upCount)}
+    else {console.log(upScore)}
 }
 
 
@@ -115,7 +121,7 @@ function answerSubmitUp() {
 
 function answerSubmitDown() {
 
-    downScore = 0
+    let downScore = 0
 
     // Down Answer One 
 
@@ -170,7 +176,7 @@ function answerSubmitDown() {
         {
         tickDownFour.src = "../assets/images/green-tick.png";
         downScore++
-        console.log(downScore++)
+        console.log(downScore)
     } else {
         tickDownFour.src = "../assets/images/incorrect-x.png"
     }
@@ -203,4 +209,24 @@ function answerSubmitDown() {
     } else {
         tickDownSix.src = "../assets/images/incorrect-x.png"
     }
+
+    // Counting up Score Verbs with Down
+    
+    let marksDown = document.getElementById("marksDown")
+    
+    if (downScore === 6) {
+        marksDown.innerHTML = "Well done! You scored "+ downScore + " out of 6. On to the next excercise!"
+    }
+    else if (downScore === 5 || downScore === 4) {
+        marksDown.innerHTML = "Almost there! You scored "+ downScore + " out of 6. Try again"
+    }
+    else if (downScore === 3 || downScore === 2) {
+        marksDown.innerHTML = "Not great! You scored "+ downScore + " out of 6. Keep trying"
+    }
+    else if (downScore === 1 || downScore === 0) {
+        marksDown.innerHTML = "Poor effort! You scored "+ downScore + " out of 6. Keep trying"
+    }
+    else {console.log(downScore)}
 }
+
+
