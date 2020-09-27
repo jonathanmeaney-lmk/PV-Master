@@ -48,6 +48,7 @@ body {
     background-color: whitesmoke;
     border-style: unset;
     border-radius: 6px;
+    margin:1px;
 }
 
 .example-box {
@@ -80,4 +81,9 @@ body {
     background-color: whitesmoke;
     border-style: unset;
     border-radius: 6px;
+}
+
+#street-image {
+    max-width:200px;
+    max-height:200px;
 }
