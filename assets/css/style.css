@@ -46,9 +46,9 @@ body {
     max-width: 6rem;
     max-height: 25px;
     background-color: whitesmoke;
-    border-style: unset;
+    border-color: whitesmoke;
     border-radius: 6px;
-    margin:1px;
+    margin: 1px;
 }
 
 .example-box {

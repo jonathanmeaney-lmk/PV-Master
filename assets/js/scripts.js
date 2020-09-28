@@ -230,3 +230,37 @@ function answerSubmitDown() {
 }
 
 
+
+// ********* VERBS WITH DOWN **************
+
+function answerSubmitInto() {
+
+    let storyResult = 0
+
+
+    let answerStoryOne = document.getElementById("story-one").value
+
+    if (answerStoryOne === "ran into") {
+        document.getElementById("story-one").style.borderColor = "#60de60"
+        document.getElementById("story-one").style.backgroundColor = "#bcf9bc"
+        storyResult++
+        console.log(storyResult)
+    }
+    else { 
+        document.getElementById("story-one").style.borderColor = "red"
+        document.getElementById("story-one").style.backgroundColor = "#ebbdbd"
+    }
+
+    let answerStoryTwo = document.getElementById("story-two").value
+
+    if (answerStoryTwo === "broken down") {
+        document.getElementById("story-two").style.borderColor = "#60de60"
+        document.getElementById("story-two").style.backgroundColor = "#bcf9bc"
+        storyResult++
+        console.log(storyResult)
+    }
+    else { 
+        document.getElementById("story-two").style.borderColor = "red"
+        document.getElementById("story-two").style.backgroundColor = "#ebbdbd"
+    }
+}
