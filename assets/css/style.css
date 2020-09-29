@@ -49,7 +49,7 @@ body {
     border-color: whitesmoke;
     border-radius: 6px;
     margin: 1px;
-    transition: 1s
+    transition: 1s;
 }
 
 .example-box {
@@ -92,4 +92,17 @@ body {
 #marksStory {
     opacity: 0;
     transition:1s;
+}
+
+.excercise-steps {
+    background-color: rgb(96 144 205 / 36%);
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px rgb(90 90 92 / 54%);
+    padding: 1rem;
+}
+
+.fa-play-circle {
+    font-size: 5rem;
+    color: rgb(51, 50, 120);
 }

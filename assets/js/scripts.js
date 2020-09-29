@@ -458,3 +458,12 @@ function answerSubmitInto() {
     marksStory.style.opacity = 1 
 }
 
+// ********* VERBS WITH DOWN **************
+
+function playAudioExcercise() {
+
+    x = document.querySelectorAll("audio")
+
+    x[0].play()
+
+}
