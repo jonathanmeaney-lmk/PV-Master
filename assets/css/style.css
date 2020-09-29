@@ -49,6 +49,7 @@ body {
     border-color: whitesmoke;
     border-radius: 6px;
     margin: 1px;
+    transition: 1s
 }
 
 .example-box {
@@ -86,4 +87,9 @@ body {
 #street-image {
     max-width:200px;
     max-height:200px;
+}
+
+#marksStory {
+    opacity: 0;
+    transition:1s;
 }
