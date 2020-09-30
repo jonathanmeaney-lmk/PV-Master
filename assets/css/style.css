@@ -67,7 +67,7 @@ body {
 }
 
 #close-one {
-   background-color: orange;
+   background-color: #fff09a;
    border-radius: 4px;
    font-style: italic;
 }
@@ -102,7 +102,21 @@ body {
     padding: 1rem;
 }
 
-.fa-play-circle {
-    font-size: 5rem;
+.audio-buttons {
+    font-size: 3rem;
     color: rgb(51, 50, 120);
+    background-color: #aebfd500;
+    border: none;
+}
+
+.fa-play-circle:hover {
+    color: #bcf9bc   
+}
+
+.fa-pause-circle:hover {
+    color: #fff09a
+}
+
+.fa-stop-circle:hover {
+    color: #e66363
 }

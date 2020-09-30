@@ -462,8 +462,23 @@ function answerSubmitInto() {
 
 function playAudioExcercise() {
 
-    x = document.querySelectorAll("audio")
+    excerciseAudio = document.querySelectorAll("audio")
 
-    x[0].play()
+    excerciseAudio[0].play()
+}
 
+function pauseAudioExcercise() {
+
+    excerciseAudio = document.querySelectorAll("audio")
+
+    excerciseAudio[0].pause()
+    
+}
+
+function stopAudioExcercise() {
+
+    excerciseAudio = document.querySelectorAll("audio")
+
+    excerciseAudio[0].pause()
+    excerciseAudio[0].currentTime = 0
 }
