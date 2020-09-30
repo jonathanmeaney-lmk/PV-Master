@@ -482,3 +482,10 @@ function stopAudioExcercise() {
     excerciseAudio[0].pause()
     excerciseAudio[0].currentTime = 0
 }
+
+function playExampleAudio() {
+
+    exampleAudio = document.querySelectorAll("audio")
+
+    exampleAudio[1].play()
+}

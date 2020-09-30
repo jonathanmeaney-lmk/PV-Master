@@ -120,3 +120,7 @@ body {
 .fa-stop-circle:hover {
     color: #e66363
 }
+
+.fa-volume-up {
+    margin-left: 3px;
+}
