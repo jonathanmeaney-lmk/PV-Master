@@ -12,8 +12,8 @@ const quizQuestions = [
     {
         question: "You don't like her offer. What will yo do?",
         answers: [
-            { text: "boil over it", correct: true },
-            { text: "turn it down", correct: false },
+            { text: "boil over it", correct: false },
+            { text: "turn it down", correct: true },
             { text: "get into it", correct: false },
         ],
     },
@@ -34,10 +34,50 @@ let optionOne = document.getElementById("option-one")
 let optionTwo = document.getElementById("option-two")
 let optionThree = document.getElementById("option-three")
 
-function showQuestion() {
-    quizQuestion.innerHTML = quizQuestions[0].question
-    optionOne.innerHTML = quizQuestions[0].answers[0].text
-    optionTwo.innerHTML = quizQuestions[0].answers[1].text
-    optionThree.innerHTML = quizQuestions[0].answers[2].text
+let index = 0
+
+quizQuestion.innerHTML = quizQuestions[index].question
+optionOne.innerHTML = quizQuestions[index].answers[0].text
+optionTwo.innerHTML = quizQuestions[index].answers[1].text
+optionThree.innerHTML = quizQuestions[index].answers[2].text
+
+function optionOneClicked() {
+    if (quizQuestions[index].answers[0].correct == true) {
+        console.log("correct")
+    } else {
+        console.log("wrong")
+    }
 
 }
+
+function optionTwoClicked() {
+    if (quizQuestions[index].answers[1].correct == false) {
+        console.log("wrong")
+    }
+}
+
+function optionThreeClicked() {
+    if (quizQuestions[index].answers[2].correct == false) {
+        console.log("wrong")
+    }
+}
+
+
+function nextQuestion() {
+    index ++;
+   
+    if (index === quizQuestions.length) {
+        quizQuestion.innerHTML = quizQuestions[0].question
+        optionOne.innerHTML = quizQuestions[0].answers[0].text
+        optionTwo.innerHTML = quizQuestions[0].answers[1].text
+        optionThree.innerHTML = quizQuestions[0].answers[2].text
+    } else {
+        quizQuestion.innerHTML = quizQuestions[index].question
+        optionOne.innerHTML = quizQuestions[index].answers[0].text
+        optionTwo.innerHTML = quizQuestions[index].answers[1].text
+        optionThree.innerHTML = quizQuestions[index].answers[2].text
+    }
+}
+
+
+
