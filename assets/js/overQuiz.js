@@ -36,10 +36,12 @@ let optionThree = document.getElementById("option-three")
 
 let index = 0
 
-quizQuestion.innerHTML = quizQuestions[index].question
-optionOne.innerHTML = quizQuestions[index].answers[0].text
-optionTwo.innerHTML = quizQuestions[index].answers[1].text
-optionThree.innerHTML = quizQuestions[index].answers[2].text
+window.addEventListener("DOMContentLoaded", function(){
+    quizQuestion.innerHTML = quizQuestions[index].question
+    optionOne.innerHTML = quizQuestions[index].answers[0].text
+    optionTwo.innerHTML = quizQuestions[index].answers[1].text
+    optionThree.innerHTML = quizQuestions[index].answers[2].text
+});
 
 function optionOneClicked() {
     if (quizQuestions[index].answers[0].correct == true) {
@@ -63,9 +65,14 @@ function optionThreeClicked() {
 }
 
 
+function  incrementIndex() {console.log(index)}
+
+
 function nextQuestion() {
     index ++;
-   
+
+    incrementIndex()
+
     if (index === quizQuestions.length) {
         quizQuestion.innerHTML = quizQuestions[0].question
         optionOne.innerHTML = quizQuestions[0].answers[0].text
