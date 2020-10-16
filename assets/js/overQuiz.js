@@ -21,9 +21,9 @@ const quizQuestions = [
     {
         question: "When the boss resigns, a new director will ..... his role:",
         answers: [
-            { text: "show up", correct: true },
-            { text: "take over", correct: false },
             { text: "close down", correct: false },
+            { text: "show up", correct: false },
+            { text: "take over", correct: true },
         ],
     },
 
@@ -53,13 +53,18 @@ function optionOneClicked() {
 }
 
 function optionTwoClicked() {
-    if (quizQuestions[index].answers[1].correct == false) {
+    if (quizQuestions[index].answers[1].correct == true) {
+        console.log("correct")
+    } else {
         console.log("wrong")
     }
 }
 
+
 function optionThreeClicked() {
-    if (quizQuestions[index].answers[2].correct == false) {
+    if (quizQuestions[index].answers[2].correct == true) {
+        console.log("correct")
+    } else {
         console.log("wrong")
     }
 }
